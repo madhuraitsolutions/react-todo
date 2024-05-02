@@ -12,6 +12,12 @@ function App() {
     <div className="flex flex-col items-center justify-items-center ">
       <h1>02.TODO Board</h1>
       <Input taskList={taskList} setTaskList={setTaskList}/>
+      <div>
+        {/* list of tasks using map() */}
+        {taskList.map((task, index) => (
+          <div key={index}>{task}</div>
+        ))} 
+      </div>
     </div>
   )
 }
