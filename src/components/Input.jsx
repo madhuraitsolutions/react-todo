@@ -5,6 +5,7 @@ export const Input = ({ taskList, setTaskList}) => {
   const handleAddTask = (e) => {
     e.preventDefault();
     setTaskList([...taskList, input]) // add new task
+    setInput('') // clear input
   }
   return (
     <>
