@@ -9,8 +9,8 @@ function App() {
     console.log(taskList);
   }, [taskList])
   return (
-    <div className="flex flex-col items-center justify-items-center ">
-      <h1>02.TODO Board</h1>
+    <div className="flex flex-col items-center justify-center py-8 gap-4">
+      <h1 className="text-3xl font-semibold">02.TODO Board</h1>
       <Input taskList={taskList} setTaskList={setTaskList}/>
       <div>
         {/* list of tasks using map() */}
