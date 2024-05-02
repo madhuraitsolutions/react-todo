@@ -1,7 +1,9 @@
 function App() {
 
   return (
-    <div>Main APP</div>
+    <>
+      <h1>02.TODO Board</h1>
+    </>
   )
 }
 
