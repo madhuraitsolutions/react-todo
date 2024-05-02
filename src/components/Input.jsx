@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const Input = () => {
+export const Input = ({ taskList, setTaskList}) => {
   const [input, setInput] = React.useState('')
   const handleAddTask = (e) => {
     e.preventDefault();
+    setTaskList([...taskList, input]) // add new task
   }
   return (
     <>
